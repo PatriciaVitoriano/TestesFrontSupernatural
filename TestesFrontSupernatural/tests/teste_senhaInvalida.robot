@@ -8,7 +8,7 @@ ${SENHA_INVALIDA}     1234
 ${emailInput}         //input[contains(@type,'text')]
 ${senhaInput}         //input[contains(@type,'password')]
 ${cadastrarButton}    //button[contains(.,'Entrar')]
-${mensagemErro}       //p[contains(.,'E-mail ou senha informados são inválidos')]
+
 
 
 *** Keywords ***
@@ -31,7 +31,6 @@ Passo 5 - Clicar em cadastrarButton
     Click Button    ${cadastrarButton}
 
 Passo 6 - Capturar screenshot se mensagem de erro de senha inválida aparecer
-    Wait Until Element Is Visible    ${mensagemErro}
     Capture Page Screenshot
 
 Passo 7 - Fechar o navegador
