@@ -33,7 +33,7 @@ jobs:
 
       run:
 
-        robot --name "TestRobot" --outputdir results/ tests/web/
+        robot --name "TestesFrontSupernatural" --outputdir results/ tests/web/
 
     - name:  Test Report
 
